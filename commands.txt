@@ -1,0 +1,4 @@
+# Revert all your uncommitted changes back to the last pushed version
+git restore .
+git clean -fd # -f flag to actually delete the files, -d remove any untracked directories, not just files.
+

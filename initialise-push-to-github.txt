@@ -1,0 +1,9 @@
+# Create a new repository on GH(preferably as the same name as the project name on your local computer)
+# Navigate to the root of your local repository
+
+# Then on git on the project path:
+    -> git init
+    -> git add .
+    -> git commit -m 'message'
+    -> git remote add origin <PASTE_YOUR_REPO_URL_HERE>
+    -> git push -u origin main
