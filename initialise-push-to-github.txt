@@ -7,3 +7,15 @@
     -> git commit -m 'message'
     -> git remote add origin <PASTE_YOUR_REPO_URL_HERE>
     -> git push -u origin main
+
+
+# unstaging(i.e. doing git add . but not yet git commit -m 'msg')
+    -> git reset
+
+# unstaging(un adding and un-commiting)
+    # if it's the first and only commit
+    -> git update-ref -d HEAD
+    -> git reset
+
+    # if there's been a previous commit before this
+    -> git reset HEAD~1
