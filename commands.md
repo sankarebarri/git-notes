@@ -70,3 +70,34 @@ git reset --hard upstream/main
 git branch -D docs-working-examples
 git push origin --delete docs-working-examples
 ```
+
+git restore examples/request_htmx.py
+echo "" >> examples/request_htmx.py
+just qa
+git diff examples/request_htmx.py
+
+
+# To revert a git add operation
+```bash
+git restore --staged <file_name>
+```
+
+# Shows each commit on a single line with an abbreviated hash and the commit message, ideal for a quick overview.
+```bash
+git log --oneline
+```
+
+# Displays the commit history of the current branch in reverse chronological order and its details
+```bash
+git log
+```
+
+# Lists the complete 40-character SHA-1 hash for every commit in the current branch history.
+```bash
+git log --pretty=format:"%H"
+```
+
+# To see the hashes for the first 10 commits of the repository (starting from the initial commit),
+```bash
+git log --pretty=format:"%H"
+```
